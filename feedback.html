@@ -1,0 +1,100 @@
+<html>
+<!--<script language="javascript">
+var name;
+name=prompt("Enter your name:");
+document.write("Welcome   "+name+"  to our website. plz enter your feeedback")
+</script>-->
+<style>
+
+#outer
+{
+	margin:4%;
+	height:40%;
+	width:91%;
+	border:1px solid;
+	background-image:url("feedback2.jpg");
+}
+</style>
+* These fields are mandatory.......................
+<body bgcolor="white">
+<div id="outer"></div>
+<form method="post" action="feedbacksave.asp">
+<fieldset>
+<legend>FEEDBACK</legend>
+<table>
+<tr>
+	<td><font color="red">Enter Username:</font></td>
+	<td> <Input type="textbox"name="mm"size="20" title="Please Enter Your name" placeholder="**Ankita**"></td>
+	
+</tr>
+<tr>
+	<td><font color="red">Enter Address:</font></td>
+	<td><textarea rows="5" cols="20"></textarea></td>
+</tr>
+
+<tr>
+	<td><font color="red">Enter mob no:</font></td>
+	<td> <Input type="textbox"name="mm"size="20"pattern='^\d{10}'  title="Please Enter Your Phone Number" placeholder="**9945823198**"required></td>
+	
+</tr>
+<tr>
+	<td><font color="red">Select Gender:</font></td>
+	<td><input type="Radio" name="g"  value="male">male</td>
+	<td><input type="Radio" name="g"  value="female">female</td>
+</tr>
+
+<tr>
+	<td><font color="red">Enter email:</font></td>
+	<td> <Input type="textbox"name="mm"size="20"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"title="Please Enter Your Phone E-mail"placeholder="**ankitabalikai2@gmail.com**"></td>
+				 
+</tr>
+
+<tr>
+	<td><font color="red">state:</font></td>
+	<td><input type="textbox" name="DOB" placeholder="Karnataka"></td>
+	
+</tr>
+<tr>
+	<td><font color="red">City:</font></td>
+	<td><input type="textbox" name="DOB" placeholder="Sangli"></td>
+	
+</tr>
+<tr>
+	<td><font color="red">Country:</font></td>
+	<td><input type="textbox" name="DOB"placeholder="India" ></td>
+	
+</tr>
+<tr>
+<td><font color="red">Website Contents</td>
+	<td><select >
+	<option value="normal">--Select--
+	<option value="Good">Good
+	<option value="Very Good">Very Good
+	<option value="Fair">Fair</td>
+	<option value="other">Other
+	</select></td>
+</tr>
+<tr>
+<td><font color="red">How you know about Website:</td>
+	<td><select name="kashiwatliwebsite">
+	<option value="normal">--Select--
+	<option value="News">News paper
+	<option value="social media">Social Media
+	<option value="friends">Friends
+	<option value="other">Other
+	</select></td>
+
+</tr>
+<tr>
+	<td><font color="red">Any Queries:</td>
+	<td><textarea rows="5" cols="20"></textarea></td>
+	</tr>
+<tr>
+	<td><input type="Reset" name="B3"  value="CLEAR"></td>
+	<td><input type="submit" name="B2"  value="SUBMIT" onclick="checkemail()"></td>
+	
+</tr>
+
+</form>
+</body>
+<html>
